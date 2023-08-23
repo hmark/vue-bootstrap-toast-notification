@@ -1,0 +1,43 @@
+{
+  "name": "vue-bootstrap-toast-notification",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-bootstrap-toast-notification.umd.cjs",
+  "module": "./dist/vue-bootstrap-toast-notification.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/vue-bootstrap-toast-notification.js",
+      "require": "./dist/vue-bootstrap-toast-notification.umd.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hmark/vue-bootstrap-toast-notification"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --emitDeclarationOnly && vite build && npm run generate:types",
+    "preview": "vite preview",
+    "generate:types": "vue-tsc --emitDeclarationOnly"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.3.0",
+    "bootstrap": "^5.3.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.66.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-css-injected-by-js": "^3.3.0",
+    "vue-tsc": "^1.8.5"
+  }
+}
